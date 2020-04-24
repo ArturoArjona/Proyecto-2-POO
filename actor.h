@@ -1,17 +1,21 @@
 #include <iostream>
+#include "Hora.h"
 
+using namespace std;
 
-class Actor
+Hora::Hora()
 {
-  public
-  Actor();
-  Actor(int i, string n);
-  void setId(int i) {id=(i>0 ? i : 0);};
-  int getId() {return id;};
-  void setNombre(string n) {nombre=n;};
-  string getNombre() {return nombre;};
-  void muestra();
-  private
-  int id;
-  string nombre;
-};
+  hh=0;
+  mm=0;
+}
+
+Hora::Hora(int h, int m)
+{
+  hh=(h >= 0 && h<24 ? h : 0);
+  mm=(m >= 0 && h<60 ? m : 0);
+}
+
+void Hora::muestra()
+{
+  cout << hh << ":"<< mm << endl; 
+}
