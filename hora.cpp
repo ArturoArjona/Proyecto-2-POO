@@ -15,7 +15,7 @@ Hora::Hora(int h, int m)
   mm=(m >= 0 && h<60 ? m : 0);
 }
 
-Actor::muestra()
+void Hora::muestra()
 {
   cout << hh << ":"<< mm << endl; 
 }
