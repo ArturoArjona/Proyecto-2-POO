@@ -15,7 +15,7 @@ Actor::Actor(int i, string n)
   nombre=n;
 }
 
-Actor::muestra()
+void Actor::muestra()
 {
   cout << "El actor con id " << id << " se llama "<< nombre << endl; 
 }
