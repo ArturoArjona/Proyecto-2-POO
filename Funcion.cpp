@@ -20,7 +20,7 @@ Funcion::Funcion(string c, int n, Hora h, int s)
   sala=(s >0 ? s : 0);
 }
 
-Funcion::muestra()
+void Funcion::muestra()
 {
   cout << "La funcion "<< numPeli << " de " << cveFuncion << " es en la sala "
   << sala << " a las ";
