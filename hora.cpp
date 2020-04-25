@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include "Hora.h"
 
 using namespace std;
@@ -17,5 +18,5 @@ Hora::Hora(int h, int m)
 
 void Hora::muestra()
 {
-  cout << hh << ":"<< mm << endl; 
+  cout << setw(7)<< hh << ":"<< setw(2)<< mm;
 }
